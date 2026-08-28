@@ -8,7 +8,6 @@ Usage:
     python src/agent.py
 """
 
-import json
 import os
 import httpx
 import anthropic
@@ -37,7 +36,7 @@ def fetch_context(query: str, sources: list[str] | None = None) -> dict:
         payload["sources"] = sources
 
     headers = {
-        "Authorization": f"******",
+        "Authorization": f"Bearer {CONTEXT_HUB_API_KEY}",
         "Content-Type": "application/json",
     }
 
