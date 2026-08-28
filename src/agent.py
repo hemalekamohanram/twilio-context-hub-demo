@@ -10,7 +10,7 @@ from strands import Agent
 from strands.models import BedrockModel
 from strands.tools.mcp import MCPClient
 
-HUB_MCP_URL = os.environ.get("CONTEXT_HUB_MCP_ENDPOINT", "http://localhost:8000/mcp")
+HUB_MCP_URL = os.environ.get("CONTEXT_HUB_MCP_ENDPOINT", "https://your-hub-server.example.com/mcp")
 
 SYSTEM_PROMPT = """You are a helpful personal assistant with access to enterprise tools
 via the Twilio Context Hub.

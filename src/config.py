@@ -5,10 +5,10 @@ Configuration for the Context Hub demo app.
 import os
 
 # Context Hub endpoints
-HUB_SERVER_URL = os.environ.get("CREDENTIALS_ENDPOINT", "http://localhost:8000")
+HUB_SERVER_URL = os.environ.get("CREDENTIALS_ENDPOINT", "https://your-hub-server.example.com")
 HUB_MCP_URL = os.environ.get("CONTEXT_HUB_MCP_ENDPOINT", f"{HUB_SERVER_URL}/mcp")
-AGENT_ENDPOINT = os.environ.get("PERSONAL_AGENT_ENDPOINT", "http://localhost:8080")
-INTEGRATIONS_URL = os.environ.get("INTEGRATIONS_BASE_URL", "http://localhost:8082")
+AGENT_ENDPOINT = os.environ.get("PERSONAL_AGENT_ENDPOINT", "https://your-agent.example.com")
+INTEGRATIONS_URL = os.environ.get("INTEGRATIONS_BASE_URL", "https://your-integrations.example.com")
 
 # Supported providers (19 live)
 PROVIDERS = {

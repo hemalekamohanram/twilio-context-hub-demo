@@ -30,7 +30,7 @@ Context Hub (routes intelligently)
 
 ```bash
 # Prerequisites: AWS SSO, Python 3.12, uv
-aws sso login --profile cnd-tweek14-07-sandbox-admin
+aws sso login --profile <your-aws-profile>
 
 # One command — starts all 5 services
 make local-all
@@ -53,7 +53,7 @@ open http://localhost:8502   # Hub Admin UI
 
 ## Team
 
-- **Hemaleka Mohanram** — Agent integration, UI, MCP providers
-- **Dinesh Maheshwari** — Identity architecture, routing, deployment
+- Engineering team
 
-Built for **H.O.O.T. Hackathon 2026** 🦉
+
+
